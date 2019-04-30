@@ -1,0 +1,7 @@
+logs
+build
+devel
+.catkin_tools
+.git
+S_curve.workspace
+
