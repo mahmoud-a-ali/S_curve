@@ -81,13 +81,26 @@ int main(int argc, char **argv)
     }
 
     plt::plot(Ts, Ps);
+    plt::xlabel("time");
+    plt::ylabel("pos");
+    plt::title("position_one_dof");
+    plt::legend();
     plt::show();
 
     plt::plot(Ts, Vs);
+    plt::xlabel("time");
+    plt::ylabel("vel");
+    plt::title("velocity_one_dof");
+    plt::legend();
     plt::show();
 
     plt::plot(Ts, As);
+    plt::xlabel("time");
+    plt::ylabel("acc");
+    plt::title("acceleration_one_dof");
+    plt::legend();
     plt::show();
+
 
 
 

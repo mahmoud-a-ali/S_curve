@@ -130,16 +130,48 @@ int main(int argc, char **argv)
         }
 
 
+        std::string jt_name;
         //for each joint plot Pos, Vel, Acc
-        for (int jt =0; jt<n_jts; jt++)
-            plt::plot(T_vec[jt], P_vec[jt]);
+        for (int jt =0; jt<n_jts; jt++){
+            jt_name= "jt_" + std::to_string(jt);
+             plt::named_plot(jt_name,T_vec[jt], P_vec[jt]);
+        }
+        plt::xlabel("time");
+        plt::ylabel("pos");
+        plt::title("position_scurve_0_vel_at_waypts");
+        plt::legend();
         plt::show();
-        for (int jt =0; jt<n_jts; jt++)
-            plt::plot(T_vec[jt], V_vec[jt]);
+
+
+        for (int jt =0; jt<n_jts; jt++){
+            jt_name= "jt_" + std::to_string(jt);
+             plt::named_plot(jt_name, T_vec[jt], V_vec[jt]);
+        }
+        plt::xlabel("time");
+        plt::ylabel("vel");
+        plt::title("position_scurve_0_vel_at_waypts");
+        plt::legend();
         plt::show();
-        for (int jt =0; jt<n_jts; jt++)
-            plt::plot(T_vec[jt], A_vec[jt]);
+
+
+        for (int jt =0; jt<n_jts; jt++){
+            jt_name= "jt_" + std::to_string(jt);
+             plt::named_plot(jt_name, T_vec[jt], A_vec[jt]);
+        }
+        plt::xlabel("time");
+        plt::ylabel("acc");
+        plt::title("position_scurve_0_vel_at_waypts");
+        plt::legend();
         plt::show();
+
+
+
+//        for (int jt =0; jt<n_jts; jt++)
+//            plt::plot(T_vec[jt], V_vec[jt]);
+//        plt::show();
+//        for (int jt =0; jt<n_jts; jt++)
+//            plt::plot(T_vec[jt], A_vec[jt]);
+//        plt::show();
 
 
      }
