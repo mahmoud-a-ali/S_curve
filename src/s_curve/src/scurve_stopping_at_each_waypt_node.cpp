@@ -1,3 +1,15 @@
+/**
+\file   scurve_stopping_at_each_waypt_node.cpp
+\brief  to scurve trajectory for ndof.
+ * this implementation of scurve considers that the velocity will be null at each waypoint.
+ * all the n dof are synchronized in motion.
+ * timing for each points could be a ref_time passed to the compute_ndof_scurve_Coefs_per_waypt function, 
+ * otherwise the optimal minimum time -for indicidual waypoints- will be computed.
+\author  Mahmoud Ali
+\date   25/4/2019
+*/
+
+
 #include "std_msgs/String.h"
 #include<vector>
 #include<string>
