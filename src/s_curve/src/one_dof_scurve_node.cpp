@@ -1,3 +1,13 @@
+/**
+\file   one_dof_scurve_node.cpp
+\brief  to scurve trajectory for one dof
+ *
+\author  Mahmoud Ali
+\date   25/4/2019
+*/
+
+
+
 #include "std_msgs/String.h"
 #include<vector>
 #include<string>
